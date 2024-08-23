@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sauna & Herbal Clinic Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <!-- Sidebar wrapper start -->
+    <nav class="sidebar-wrapper">
+        <!-- Sidebar brand starts -->
+        <div class="sidebar-brand">
+            <a href="index.html" class="logo">
+                <img src="assets/images/logo.svg" alt="Sauna & Herbal Clinic" />
+            </a>
+        </div>
+        <!-- Sidebar brand ends -->
+
+        <div class="sidebar-menu">
+            <ul>
+                <li class="sidebar-dropdown active">
+                    <a href="#">
+                        <i class="bi bi-house icon"></i>
+                        <span class="menu-text">Dashboards</span>
+                        <span class="dropdown-toggle">▾</span>
+                    </a>
+                    <div class="sidebar-submenu">
+                        <ul>
+                            <li><a href="index.html" class="current-page">Sales</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="sidebar-dropdown">
+                    <a href="#">
+                        <i class="bi bi-gem icon"></i>
+                        <span class="menu-text">Widgets</span>
+                        <span class="dropdown-toggle">▾</span>
+                    </a>
+                    <div class="sidebar-submenu">
+                        <ul>
+                            <li><a href="widgets.html">Widgets</a></li>
+                            <li><a href="graph-widgets.html">Graph Widgets</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="sidebar-dropdown">
+                    <a href="#">
+                        <i class="bi bi-calendar4 icon"></i>
+                        <span class="menu-text">Calendars</span>
+                        <span class="dropdown-toggle">▾</span>
+                    </a>
+                    <div class="sidebar-submenu">
+                        <ul>
+                            <li><a href="calendar.html">Daygrid View</a></li>
+                            <li><a href="calendar-external-draggable.html">External Draggable</a></li>
+                            <li><a href="calendar-google.html">Google Calendar</a></li>
+                            <li><a href="calendar-list-view.html">List View</a></li>
+                            <li><a href="calendar-selectable.html">Selectable</a></li>
+                            <li><a href="calendar-week-numbers.html">Week Numbers</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="sidebar-dropdown">
+                    <a href="#">
+                        <i class="bi bi-window-split icon"></i>
+                        <span class="menu-text">Tables</span>
+                        <span class="dropdown-toggle">▾</span>
+                    </a>
+                    <div class="sidebar-submenu">
+                        <ul>
+                            <li><a href="tables.html">Tables</a></li>
+                            <li><a href="data-tables.html">Data Tables</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="sidebar-dropdown">
+                    <a href="#">
+                        <i class="bi bi-pie-chart icon"></i>
+                        <span class="menu-text">Graphs & Maps</span>
+                        <span class="dropdown-toggle">▾</span>
+                    </a>
+                    <div class="sidebar-submenu">
+                        <ul>
+                            <li><a href="apex.html">Apex</a></li>
+                            <li><a href="morris.html">Morris</a></li>
+                            <li><a href="maps.html">Maps</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="sidebar-dropdown">
+                    <a href="#">
+                        <i class="bi bi-x-diamond icon"></i>
+                        <span class="menu-text">Authentication</span>
+                        <span class="dropdown-toggle">▾</span>
+                    </a>
+                    <div class="sidebar-submenu">
+                        <ul>
+                            <li><a href="login.html">Login</a></li>
+                            <li><a href="signup.html">Signup</a></li>
+                            <li><a href="error.html">Error</a></li>
+                            <li><a href="maintenance.html">Maintenance</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="sidebar-dropdown">
+                    <a href="#">
+                        <i class="bi bi-box icon"></i>
+                        <span class="menu-text">Products</span>
+                        <span class="dropdown-toggle">▾</span>
+                    </a>
+                    <div class="sidebar-submenu">
+                        <ul>
+                            <li><a href="products-list.html">Products List</a></li>
+                            <li><a href="upload-product.html">Upload Product</a></li>
+                            <li><a href="edit-product.html">Edit Product</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="starter-page.html">
+                        <i class="bi bi-hand-index-thumb icon"></i>
+                        <span class="menu-text">Link</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Sidebar wrapper end -->
+
+    <!-- Content Wrapper Start -->
+    <div class="content">
+        <header class="header">
+            <!-- Hamburger Menu Button -->
+            <button class="menu-btn">
+                <i class="bi bi-list"></i>
+            </button>
+
+            <div class="header-left">
+                <h1>Dashboard</h1>
+            </div>
+            <div class="header-right">
+                <div class="search-bar">
+                    <input type="text" placeholder="Search...">
+                    <i class="bi bi-search"></i>
+                </div>
+                <div class="notifications">
+                    <a href="notifications.html">
+                        <i class="bi bi-bell"></i>
+                        <span class="notification-badge">3</span>
+                    </a>
+                </div>
+                <div class="user-profile">
+                    <img src="assets/images/user-profile.jpg" alt="User Profile">
+                    <span class="username">John Doe</span>
+                </div>
+            </div>
+        </header>
+
+        <main class="main-content">
+            <section class="overview">
+                <h2>Overview</h2>
+                <div class="overview-cards">
+                    <a href="total-revenue.html" class="card">
+                        <div class="card-icon">
+                            <i class="bi bi-cash"></i>
+                        </div>
+                        <div class="card-content">
+                            <h3>Total Revenue</h3>
+                            <p>$12,345</p>
+                        </div>
+                    </a>
+                    <a href="appointments.html" class="card">
+                        <div class="card-icon">
+                            <i class="bi bi-calendar-check"></i>
+                        </div>
+                        <div class="card-content">
+                            <h3>Appointments</h3>
+                            <p>45</p>
+                        </div>
+                    </a>
+                    <a href="clients.html" class="card">
+                        <div class="card-icon">
+                            <i class="bi bi-person-lines-fill"></i>
+                        </div>
+                        <div class="card-content">
+                            <h3>Clients</h3>
+                            <p>320</p>
+                        </div>
+                    </a>
+                    <a href="feedbacks.html" class="card">
+                        <div class="card-icon">
+                            <i class="bi bi-heart"></i>
+                        </div>
+                        <div class="card-content">
+                            <h3>Feedbacks</h3>
+                            <p>89</p>
+                        </div>
+                    </a>
+                    <!-- New Card 1 -->
+                    <a href="new-metric1.html" class="card">
+                        <div class="card-icon">
+                            <i class="bi bi-bar-chart"></i>
+                        </div>
+                        <div class="card-content">
+                            <h3>New Metric 1</h3>
+                            <p>$4,567</p>
+                        </div>
+                    </a>
+                    <!-- New Card 2 -->
+                    <a href="new-metric2.html" class="card">
+                        <div class="card-icon">
+                            <i class="bi bi-people"></i>
+                        </div>
+                        <div class="card-content">
+                            <h3>New Metric 2</h3>
+                            <p>150</p>
+                        </div>
+                    </a>
+                </div>
+            </section>
+        
+            <section class="charts">
+                <h2>Charts</h2>
+                <div class="chart-container">
+                    <div class="chart-card">
+                        <h3>Revenue Growth</h3>
+                        <canvas id="revenue-chart"></canvas>
+                    </div>
+                    <div class="chart-card">
+                        <h3>Client Growth</h3>
+                        <canvas id="client-growth-chart"></canvas>
+                    </div>
+                    <div class="chart-card">
+                        <h3>Web Traffic</h3>
+                        <canvas id="web-traffic-chart"></canvas>
+                    </div>
+                    <div class="chart-card">
+                        <h3>Sales</h3>
+                        <canvas id="sales-chart"></canvas>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-content">
+                <p>&copy; 2024 Sauna & Herbal Clinic. All Rights Reserved.</p>
+                <div class="footer-links">
+                    <a href="privacy-policy.html">Privacy Policy</a>
+                    <a href="terms-of-service.html">Terms of Service</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+            </div>
+        </footer>
+        <!-- Footer end -->
+    </div>
+    <!-- Content Wrapper End -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
+
+   
+

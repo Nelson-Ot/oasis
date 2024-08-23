@@ -1,0 +1,360 @@
+/* General Styling */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    min-height: 100vh;
+    background-color: #f4f5f7;
+}
+
+.sidebar-wrapper {
+    width: 250px;
+    background-color: #ffffff;
+    color: #333;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid #ddd;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    transition: width 0.3s ease;
+}
+
+.sidebar-wrapper.shrink {
+    width: 80px; /* Adjusted width for the shrunk state */
+}
+
+.sidebar-brand {
+    padding: 20px;
+    background-color: #ffffff;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    transition: opacity 0.3s ease;
+}
+
+.sidebar-wrapper.shrink .sidebar-brand {
+    opacity: 0; /* Hide brand when shrunk */
+}
+
+.sidebar-brand .logo img {
+    max-width: 150px;
+    height: auto;
+}
+
+.sidebar-wrapper.shrink .sidebar-brand .logo img {
+    display: none; /* Hide the logo when shrunk */
+}
+
+.sidebar-menu {
+    flex: 1;
+    overflow-y: auto;
+}
+
+.sidebar-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar-menu li {
+    position: relative;
+}
+
+.sidebar-menu a {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    color: #333;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background-color 0.3s, color 0.3s, padding-left 0.3s;
+}
+
+.sidebar-wrapper.shrink .sidebar-menu a {
+    justify-content: center;
+    padding-left: 0; /* Center the icons when shrunk */
+}
+
+.sidebar-menu a:hover, .sidebar-menu a.active {
+    background-color: #f0f0f0;
+    color: #007bff;
+}
+
+.sidebar-menu .icon {
+    font-size: 20px;
+    margin-right: 10px;
+    transition: margin-right 0.3s ease;
+}
+
+.sidebar-wrapper.shrink .icon {
+    margin-right: 0; /* Remove the margin when shrunk */
+}
+
+.sidebar-dropdown .dropdown-toggle {
+    margin-left: auto;
+    font-size: 14px;
+    transition: transform 0.3s;
+}
+
+.sidebar-dropdown.active .dropdown-toggle {
+    transform: rotate(180deg);
+}
+
+.sidebar-submenu {
+    display: none;
+    padding-left: 20px;
+    background-color: #f9f9f9;
+}
+
+.sidebar-dropdown.active .sidebar-submenu {
+    display: block;
+}
+
+.sidebar-submenu a {
+    display: block;
+    padding: 10px;
+    color: #555;
+    text-decoration: none;
+}
+
+.sidebar-submenu a:hover {
+    background-color: #f0f0f0;
+}
+
+.sidebar-wrapper.shrink .sidebar-submenu {
+    display: none; /* Hide submenu items when shrunk */
+}
+
+/* Sidebar default (expanded) state */
+.sidebar-wrapper {
+    width: 250px;
+    transition: width 0.3s ease;
+}
+
+/* Sidebar collapsed state */
+.sidebar-wrapper.collapsed {
+    width: 80px; /* Adjust width for collapsed state */
+}
+
+.sidebar-wrapper.collapsed .sidebar-menu .menu-text {
+    display: none; /* Hide text in collapsed state */
+}
+
+.sidebar-wrapper.collapsed .sidebar-menu .icon {
+    font-size: 24px; /* Adjust icon size if needed */
+}
+
+.sidebar-wrapper.collapsed .sidebar-brand .logo img {
+    width: 40px; /* Adjust logo size when collapsed */
+}
+
+/* Content adjustment */
+.content {
+    transition: margin-left 0.3s ease;
+}
+
+.content.shifted {
+    margin-left: 80px; /* Adjust margin to fit the collapsed sidebar */
+}
+
+/* Optional: Styling for when the sidebar is collapsed */
+.sidebar-wrapper.collapsed .sidebar-menu a {
+    padding-left: 10px; /* Adjust padding if needed */
+}
+
+.sidebar-wrapper.collapsed .sidebar-menu li {
+    padding: 0; /* Remove extra padding if needed */
+}
+
+/* Hamburger menu button styling */
+.menu-btn {
+    background: none;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.3s ease;
+}
+
+.menu-btn:hover {
+    background-color: #f0f0f0; /* Light gray background on hover */
+    border-radius: 4px; /* Rounded corners for a smoother look */
+}
+
+.menu-btn i {
+    font-size: 24px; /* Adjust icon size */
+    color: #333; /* Icon color */
+    transition: transform 0.3s ease;
+}
+
+.menu-btn.active i {
+    transform: rotate(90deg); /* Rotate icon when active (optional) */
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #ffffff; /* Same background color as the sidebar */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000; /* Ensure it stays on top */
+}
+
+.header .menu-btn {
+    margin-right: auto; /* Push the button to the left */
+}
+
+
+/* Main Content Styling */
+.content {
+    margin-left: 250px;
+    padding: 20px;
+    flex: 1;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: margin-left 0.3s ease;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header-left h1 {
+    margin: 0;
+    color: #333;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.search-bar input {
+    padding: 5px 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    outline: none;
+    font-size: 14px;
+}
+
+.search-bar i {
+    margin-left: 5px;
+    color: #333;
+}
+
+.notifications {
+    margin-right: 20px;
+}
+
+.notifications a {
+    color: #333;
+    text-decoration: none;
+    position: relative;
+}
+
+.notifications .notification-badge {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background-color: #e74c3c;
+    color: #ffffff;
+    border-radius: 50%;
+    padding: 2px 6px;
+    font-size: 12px;
+}
+
+.user-profile {
+    display: flex;
+    align-items: center;
+}
+
+.user-profile img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.user-profile .username {
+    color: #333;
+}
+
+/* Cards */
+.overview-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
+    flex: 1 1 calc(25% - 20px);
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 20px;
+    transition: box-shadow 0.3s, transform 0.3s;
+    margin-bottom: 20px;
+}
+
+.card:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    transform: scale(1.03);
+}
+
+.card-icon {
+    font-size: 30px;
+    margin-bottom: 10px;
+    color: #007bff;
+}
+
+.card-content h3 {
+    margin: 0;
+    font-size: 18px;
+    color: #333;
+}
+
+.card-content p {
+    margin: 5px 0 0;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Charts */
+.charts {
+    margin-top: 20px;
+}
+
+.chart-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.chart-card {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.chart-card h3 {
+    margin: 0 0 15px;
+    color: #333;
+}
+
+.chart-card canvas {
+    width: 100%;
+    height: 300px;
+}
