@@ -4648,7 +4648,7 @@ textarea.form-control-lg {
   float: left;
   padding-right: var(--bs-breadcrumb-item-padding-x);
   color: var(--bs-breadcrumb-divider-color);
-  content: var(--bs-breadcrumb-divider, "https://admin.pixelstrap.net/") /* rtl: var(--bs-breadcrumb-divider, "/") */;
+  content: var(--bs-breadcrumb-divider, "/") /* rtl: var(--bs-breadcrumb-divider, "/") */;
 }
 .breadcrumb-item.active {
   color: var(--bs-breadcrumb-item-active-color);
@@ -28586,7 +28586,7 @@ div.ninotree .collapsed {
   background-image: url(../images/switch/square-gray.png);
 }
 .default-square .form-switch .form-check-input:checked {
-  background-image: url(https://admin.pixelstrap.net/edmin/assets/images/switch/square.svg);
+  background-image: url(edmin/assets/images/switch/square.svg);
 }
 
 /**=====================

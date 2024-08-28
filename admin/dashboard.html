@@ -1,0 +1,768 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="Edmin admin is super flexible, powerful, clean &amp; modern responsive bootstrap admin template with unlimited possibilities." />
+    <meta name="keywords"
+        content="admin template, Edmin admin template, best javascript admin, dashboard template, bootstrap admin template, responsive admin template, web app" />
+    <meta name="author" content="pixelstrap" />
+    <title>Oasis - Herbal Sauna</title>
+    <!-- Favicon icon-->
+    <link rel="icon" href="assets/images/favicon/favicon.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="assets/images/favicon/favicon.png" type="image/x-icon" />
+    <!-- Google font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com/" />
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+        rel="stylesheet" />
+    <!-- Font awesome icon css -->
+    <link rel="stylesheet" href="assets/css/vendors/%40fortawesome/fontawesome-free/css/all.min.css" />
+    <link rel="stylesheet" href="assets/css/vendors/%40fortawesome/fontawesome-free/css/fontawesome.css" />
+    <link rel="stylesheet" href="assets/css/vendors/%40fortawesome/fontawesome-free/css/brands.css" />
+    <link rel="stylesheet" href="assets/css/vendors/%40fortawesome/fontawesome-free/css/solid.css" />
+    <link rel="stylesheet" href="assets/css/vendors/%40fortawesome/fontawesome-free/css/regular.css" />
+    <link rel='stylesheet'
+        href='https://cdn-uicons.flaticon.com/2.5.1/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <!-- Ico Icon css -->
+    <link rel="stylesheet" type="text/css" href="assets/css/vendors/%40icon/icofont/icofont.css" />
+    <!-- Flag Icon css -->
+    <link rel="stylesheet" type="text/css" href="assets/css/vendors/flag-icon.css" />
+    <!-- Themify Icon css -->
+    <link rel="stylesheet" type="text/css" href="assets/css/vendors/themify-icons/themify-icons/css/themify.css" />
+    <!-- Animation css -->
+    <link rel="stylesheet" type="text/css" href="assets/css/vendors/animate.css/animate.css" />
+    <!-- Whether Icon css-->
+    <link rel="stylesheet" type="text/css" href="assets/css/vendors/weather-icons/css/weather-icons.min.css" />
+    <!-- Apex Chart css-->
+    <link rel="stylesheet" type="text/css" href="assets/css/vendors/apexcharts/dist/apexcharts.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/vendors/scrollbar.css" />
+    <!-- App css-->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link id="color" rel="stylesheet" href="assets/css/color-1.css" media="screen" />
+</head>
+
+<body>
+    <!-- loader-->
+    <div class="loader-wrapper">
+        <div class="loader"></div>
+    </div>
+    <main class="page-wrapper compact-wrapper" id="pageWrapper">
+        <!-- Page header start -->
+        <header class="page-header row">
+            <div class="logo-wrapper d-flex align-items-center col-auto">
+                <a href="index.html">
+                    <img class="for-light" src="assets/images/logo/logoo.png" alt="logo" />
+                </a>
+                <a class="close-btn" href="javascript:void(0)">
+                    <div class="toggle-sidebar">
+                        <div class="line"></div>
+                        <div class="line"></div>
+                        <div class="line"></div>
+                    </div>
+                </a>
+            </div>
+            <div class="page-main-header col">
+                <div class="header-left d-lg-block d-none">
+                    <form class="search-form mb-0">
+                        <div class="input-group">
+                            <span class="input-group-text pe-0">
+                                <svg class="search-bg svg-color">
+                                    <use href="/assets/svg/iconly-sprite.svg#Search">
+                                    </use>
+                                </svg></span>
+                            <input class="form-control" type="text" placeholder="Search anything..." />
+                        </div>
+                    </form>
+                </div>
+                <div class="nav-right">
+                    <ul class="header-right">
+                        <li class="profile-dropdown custom-dropdown">
+                            <div class="d-flex align-items-center">
+                                <img src="assets/images/profile.png" alt="" />
+                                <div class="flex-grow-1">
+                                    <h5>Wade Warren</h5>
+                                    <span>UI Designer</span>
+                                </div>
+                            </div>
+                            <div class="custom-menu overflow-hidden">
+                                <ul>
+                                    <li class="d-flex">
+                                        <svg class="svg-color">
+                                            <use href="/assets/svg/iconly-sprite.svg#Profile">
+                                            </use>
+                                        </svg><a class="ms-2" href="user-profile.html">Account</a>
+                                    </li>
+                                    <li class="d-flex">
+                                        <svg class="svg-color">
+                                            <use href="/assets/svg/iconly-sprite.svg#Message">
+                                            </use>
+                                        </svg><a class="ms-2" href="letter-box.html">Inbox</a>
+                                    </li>
+                                    <li class="d-flex">
+                                        <svg class="svg-color">
+                                            <use href="/assets/svg/iconly-sprite.svg#Document">
+                                            </use>
+                                        </svg><a class="ms-2" href="to-do.html">Task</a>
+                                    </li>
+                                    <li class="d-flex">
+                                        <svg class="svg-color">
+                                            <use href="/assets/svg/iconly-sprite.svg#Login">
+                                            </use>
+                                        </svg><a class="ms-2" href="login.html">Log Out</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <!-- Page header end-->
+        <div class="page-body-wrapper">
+            <!-- Page sidebar start-->
+            <div class="overlay"></div>
+            <aside class="page-sidebar" data-sidebar-layout="stroke-svg">
+                <div class="left-arrow" id="left-arrow">
+                    <svg class="feather">
+                        <use href="/assets/svg/feather-icons/dist/feather-sprite.svg#arrow-left">
+                        </use>
+                    </svg>
+                </div>
+                <div id="sidebar-menu">
+                    <ul class="sidebar-menu" id="simple-bar">
+                        <li class="pin-title sidebar-list p-0">
+                            <h5 class="sidebar-main-title">Pinned</h5>
+                        </li>
+                        <li class="line pin-line"></li>
+                        <li class="sidebar-main-title">General</li>
+                        <li class="sidebar-list">
+                            <a class="sidebar-link" href="dashboard.html">
+                                <span>Dashboard</span>
+                            </a>
+
+                        </li>
+                        <li class="sidebar-list">
+                            <a class="sidebar-link" href="clients.html">
+                                <span>Clients</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-list">
+                            <a class="sidebar-link" href="staff.html">
+                                <span>Staff</span>
+                            </a>
+
+                        </li>
+                        <li class="line"></li>
+                        <li class="sidebar-main-title">Applications</li>
+                        <li class="sidebar-list">
+                            <svg class="pinned-icon">
+                                <use href="/assets/svg/iconly-sprite.svg#Pin"></use>
+                            </svg><a class="sidebar-link" href="javascript:void(0)">
+                                <svg class="stroke-icon">
+                                    <use href="/assets/svg/iconly-sprite.svg#Info-circle">
+                                    </use>
+                                </svg><span>Project</span>
+                                <svg class="feather">
+                                    <use href="/assets/svg/feather-icons/dist/feather-sprite.svg#chevron-right">
+                                    </use>
+                                </svg></a>
+                            <ul class="sidebar-submenu">
+                                <li>
+                                    <a href="project-list.html">
+                                        <svg class="svg-menu">
+                                            <use href="/assets/svg/iconly-sprite.svg#right-3">
+                                            </use>
+                                        </svg>Project List</a>
+                                </li>
+                                <li>
+                                    <a href="projectcreate.html">
+                                        <svg class="svg-menu">
+                                            <use href="/assets/svg/iconly-sprite.svg#right-3">
+                                            </use>
+                                        </svg>Create New</a>
+                                </li>
+                            </ul>
+                        </li>
+                       
+                        
+                    </ul>
+                </div>
+                <div class="right-arrow" id="right-arrow">
+                    <svg class="feather">
+                        <use href="/assets/svg/feather-icons/dist/feather-sprite.svg#arrow-right">
+                        </use>
+                    </svg>
+                </div>
+            </aside>
+            <!-- Page sidebar end-->
+            <div class="page-body">
+                <div class="container-fluid">
+                    <div class="row page-title">
+                        <div class="col-sm-6">
+                            <h3>Project Dashboard</h3>
+                        </div>
+                        <div class="col-sm-6">
+                            <nav>
+                                <ol class="breadcrumb justify-content-sm-end align-items-center">
+                                    <li class="breadcrumb-item">
+                                        <a href="index.html">
+
+                                            <i class="fi fi-rr-home"></i>
+                                        </a>
+                                    </li>
+                                    <li class="breadcrumb-item">Dashboard</li>
+                                    <li class="breadcrumb-item active">Project Dashboard</li>
+                                </ol>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+                <!-- Container-fluid starts-->
+                <div class="container-fluid project-dashboard default-dashboard">
+                    <div class="row">
+                        <!-- <div class="col-sm-6 col-xl-4">
+                            <div class="card profile-greeting card-hover">
+                              <div class="card-body">
+                                <div class="img-overlay">
+                                  <h1>Good day, Lena Miller</h1>
+                                  <p>Welcome to the Edmin family! We are delighted that you have visited our dashboard.</p><a class="btn btn-primary" href="pricing.html">Go Premium</a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        <div class="col-sm-6 col-md-4">
+                            <div class="card total-revenue">
+                                <div class="card-header border-dash-bottom">
+                                    <h4>Total Revenue</h4>
+                                    <div class="card-icon">
+                                        <h3 class="f-w-600">$983731</h3>
+                                    </div>
+                                </div>
+                                <div class="card-body px-0">
+                                    <div class="revenuechart" id="revenuechart"></div>
+                                </div>
+                            </div>
+                        </div> -->
+                        <div class="col-sm-6 col-xl-4">
+                            <div class="card profile-greeting card-hover">
+                                <div class="card-body">
+                                    <div class="img-overlay">
+                                        <h1>Good day, Lena Miller</h1>
+                                        <p>Welcome to the Edmin family! We are delighted that you have visited our
+                                            dashboard.</p>
+                                        <a class="btn btn-primary" href="pricing.html">Go Premium</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-xl-3">
+                            <div class="card project-card">
+                                <div class="card-header">
+                                    <h4>Shop Overview</h4>
+                                    <div class="dropdown icon-dropdown">
+                                        <button class="btn dropdown-toggle" id="userdropdown7" type="button"
+                                            data-bs-toggle="dropdown" aria-expanded="false"><i
+                                                class="icon-more-alt"></i></button>
+                                        <div class="dropdown-menu dropdown-menu-end" aria-labelledby="userdropdown7"><a
+                                                class="dropdown-item" href="#">Weekly</a><a class="dropdown-item"
+                                                href="#">Monthly</a><a class="dropdown-item" href="#">Yearly</a></div>
+                                    </div>
+                                </div>
+                                <div class="card-body pt-0">
+                                    <h4>56<span class="ms-1">Products</span></h4>
+                                    <div class="row align-items-center">
+                                        <div class="col-5 custom-width">
+                                            <div class="progress progress-striped-primary">
+                                                <div class="progress-bar" style="width: 100%" role="progressbar"
+                                                    aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                            <div class="progress progress-striped-secondary">
+                                                <div class="progress-bar" style="width: 60%" role="progressbar"
+                                                    aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                            <div class="progress progress-striped-tertiary">
+                                                <div class="progress-bar" style="width: 45%" role="progressbar"
+                                                    aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                        </div>
+                                        <div class="col-7 d-sm-none d-md-block">
+                                            <ul class="overview-details">
+                                                <li class="d-flex align-items-center">
+                                                    <div class="circle-dot-primary"><span></span></div>
+                                                    <h5>15<span class="font-light ms-1">All products</span></h5>
+                                                </li>
+                                                <li class="d-flex align-items-center">
+                                                    <div class="circle-dot-secondary"><span></span></div>
+                                                    <h5>62<span class="font-light ms-1">Published</span></h5>
+                                                </li>
+                                                <li class="d-flex align-items-center">
+                                                    <div class="circle-dot-tertiary"><span></span></div>
+                                                    <h5>20<span class="font-light ms-1">Draft</span></h5>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <button class="view-btn btn bg-light d-block w-100 position-relative" type="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">View products</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card client-card">
+                                <div class="card-header border-dash-bottom">
+                                    <h4>Total Staff members</h4>
+                                    <div class="card-icon">
+                                        <h3 class="f-w-600">50</h3>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <div class="d-block">
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <div class="team-member">
+                                                <div class="customers d-inline-block avatar-group">
+                                                    <ul>
+                                                        <li class="d-inline-block">
+                                                            <img class="img-52 b-r-8" src="assets/images/user/7.jpg"
+                                                                alt="#" />
+                                                        </li>
+                                                        <li class="d-inline-block">
+                                                            <img class="img-52 b-r-8" src="assets/images/user/2.jpg"
+                                                                alt="#" />
+                                                        </li>
+                                                        <li class="d-inline-block">
+                                                            <img class="img-52 b-r-8" src="assets/images/user/1.jpg"
+                                                                alt="#" />
+                                                        </li>
+                                                        <li class="d-inline-block">
+                                                            <span class="img-52 img-h-52 b-r-10">+4 </span>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="project-chart">
+                                                <div class="project" id="project"></div>
+                                            </div>
+                                        </div>
+                                        <div class="client-btn d-flex justify-content-between">
+                                            <a class="btn btn-secondary" href="letter-box.html">All staff members</a>
+                                            <a class="btn btn-primary px-5 px-lg-3 px-md-2"
+                                                href="list-products.html">Add staff</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-xl-4">
+                            <!-- Bookmark menu-->
+                            <div class="card">
+                                <div class="card-header pb-0">
+                                    <h4>All Enquiries</h4>
+                                    <div class="dropdown icon-dropdown">
+
+                                        <a class="btn btn-primary" href="#">View All</a>
+
+                                    </div>
+                                </div>
+                                <div class="card-body pt-0 course-table">
+                                    <div class="table-responsive">
+                                        <table class="table">
+                                            <thead>
+                                                <tr>
+                                                    <th>name</th>
+                                                    <th>mobile no</th>
+                                                    <th>Message</th>
+                                                    <th>date</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        <div class="d-flex align-items-center gap-2">
+                                                            <div class="flex-shrink-0"><img src="" alt=""></div>
+                                                            <div class="flex-grow-1"> <a href="user-profile.html">
+                                                                    <h6 class="f-w-500">Jacob Mabuto</h6>
+                                                                </a>
+                                                                <span class="font-light f-w-400 f-13">08:00</span><br />
+                                                                <span
+                                                                    class="font-light f-w-400 f-13">test@mail.com</span>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td>kshs 150</td>
+                                                    <td>Steaming</td>
+                                                    <td>
+                                                        12/08/2024
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <div class="d-flex align-items-center gap-2">
+                                                            <div class="flex-shrink-0"><img src="" alt=""></div>
+                                                            <div class="flex-grow-1"> <a href="user-profile.html">
+                                                                    <h6 class="f-w-500">Jacob Mabuto</h6>
+                                                                </a>
+                                                                <span class="font-light f-w-400 f-13">08:00</span><br />
+                                                                <span
+                                                                    class="font-light f-w-400 f-13">test@mail.com</span>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td>0712356897</td>
+                                                    <td>Message</td>
+                                                    <td>
+                                                        12/08/2024
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <div class="d-flex align-items-center gap-2">
+                                                            <div class="flex-shrink-0"><img src="" alt=""></div>
+                                                            <div class="flex-grow-1"> <a href="user-profile.html">
+                                                                    <h6 class="f-w-500">Jacob Mabuto</h6>
+                                                                </a>
+                                                                <span class="font-light f-w-400 f-13">08:00</span><br />
+                                                                <span
+                                                                    class="font-light f-w-400 f-13">test@mail.com</span>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td>kshs 150</td>
+                                                    <td>Steaming</td>
+                                                    <td>
+                                                        12/08/2024
+                                                    </td>
+                                                </tr>
+
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-8">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <!-- Task menu-->
+                                    <div class="card list-card">
+                                        <div class="card-header pb-0">
+                                            <h4>Blog Title</h4>
+                                            <div class="dropdown icon-dropdown">
+                                                <button class="btn dropdown-toggle" id="userdropdown05" type="button"
+                                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                                    <i class="icon-more-alt"></i>
+                                                </button>
+                                                <div class="dropdown-menu dropdown-menu-end"
+                                                    aria-labelledby="userdropdown05">
+                                                    <a class="dropdown-item" href="#">Weekly</a><a class="dropdown-item"
+                                                        href="#">Monthly</a><a class="dropdown-item" href="#">Yearly</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-body">
+                                            <ul>
+                                                <li class="list-item">
+                                                    <div class="d-flex align-items-center">
+
+                                                        <h5 class="f-w-500">
+                                                            so powerfully and metaphysically
+                                                        </h5>
+                                                    </div>
+                                                    <div>
+                                                        <button class="btn edge-btn f-12 w-100 btn-light-primary">
+                                                            Today
+                                                        </button>
+                                                    </div>
+                                                </li>
+                                                <li class="list-item">
+                                                    <div class="d-flex align-items-center">
+
+                                                        <h5 class="f-w-500">
+                                                            so powerfully and metaphysically
+                                                        </h5>
+                                                    </div>
+                                                    <div>
+                                                        <button class="btn edge-btn f-12 w-100 btn-light-primary">
+                                                            Today
+                                                        </button>
+                                                    </div>
+                                                </li>
+                                                <li class="list-item">
+                                                    <div class="d-flex align-items-center">
+
+                                                        <h5 class="f-w-500">
+                                                            so powerfully and metaphysically
+                                                        </h5>
+                                                    </div>
+                                                    <div>
+                                                        <button class="btn edge-btn f-12 w-100 btn-light-primary">
+                                                            Today
+                                                        </button>
+                                                    </div>
+                                                </li>
+
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-12 col-lg-6">
+                                    <!-- Schedule menu-->
+                                    <div class="card schedule-card">
+                                        <div class="card-header pb-0">
+                                            <h4 class="mb-2">Scheduled appointments</h4>
+                                            <div class="dropdown icon-dropdown">
+                                                <button class="btn dropdown-toggle" id="userdropdown8" type="button"
+                                                    data-bs-toggle="dropdown" aria-expanded="false"><i
+                                                        class="icon-more-alt"></i></button>
+                                                <div class="dropdown-menu dropdown-menu-end"
+                                                    aria-labelledby="userdropdown8"><a class="dropdown-item"
+                                                        href="#">Weekly</a><a class="dropdown-item"
+                                                        href="#">Monthly</a><a class="dropdown-item" href="#">Yearly</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-body pt-0">
+                                            <div class="d-flex justify-content-between mb-3">
+                                                <h5>Aug 2024</h5>
+                                                <div class="d-flex align-items-center gap-2 monthly-time">
+                                                    <h5 class="font-light">Month </h5>
+                                                    <h5 class="font-light">Year</h5>
+                                                </div>
+                                            </div>
+                                            <ul class="schedule-wrapper nav nav-tabs" id="myTab" role="tablist">
+                                                <li class="nav-item"><a class="nav-link active" id="mon-tab"
+                                                        data-bs-toggle="tab" href="#mon" role="tab" aria-controls="mon"
+                                                        aria-selected="false"><span>Mo </span>
+                                                        <h6>01</h6>
+                                                    </a></li>
+                                                <li class="nav-item"><a class="nav-link" id="tue-tab"
+                                                        data-bs-toggle="tab" href="#tue" role="tab" aria-controls="tue"
+                                                        aria-selected="true"><span>Tu </span>
+                                                        <h6>02</h6>
+                                                    </a></li>
+                                                <li class="nav-item"><a class="nav-link" id="wed-tab"
+                                                        data-bs-toggle="tab" href="#wed" role="tab" aria-controls="wed"
+                                                        aria-selected="false"><span>We </span>
+                                                        <h6>03</h6>
+                                                    </a></li>
+                                                <li class="nav-item"><a class="nav-link" id="thu-tab"
+                                                        data-bs-toggle="tab" href="#thu" role="tab" aria-controls="thu"
+                                                        aria-selected="false"><span>Th </span>
+                                                        <h6>04</h6>
+                                                    </a></li>
+                                                <li class="nav-item"><a class="nav-link" id="frd-tab"
+                                                        data-bs-toggle="tab" href="#frd" role="tab" aria-controls="frd"
+                                                        aria-selected="true"><span>Fr </span>
+                                                        <h6>05</h6>
+                                                    </a></li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link font-primary" id="sat-tab" data-bs-toggle="tab" href="#sat" role="tab" aria-controls="sat" aria-selected="false"><span>Sa </span><h6>06</h6>
+                                                    </a></li>
+                                            </ul>
+                                            <div class="tab-content" id="myTabContent">
+                                                <div class="tab-pane fade active show" id="mon" role="tabpanel"
+                                                    aria-labelledby="mon-tab">
+                                                    <ul class="activity-update">
+                                                        <li class="d-flex align-items-center b-l-primary">
+                                                            <div class="flex-grow-1"> <span>10:00 to 10:20 am</span>
+                                                                <h5>Sauna</h5>
+                                                                <h6>Hannah</h6>
+                                                            </div>
+                                                            <div class="flex-shrink-0"> 
+                                                                <!-- <img class="img-40 b-r-10" src="../assets/images/avatar/11.jpg" alt=""> -->
+                                                                <span class="f-w-400 f-13">7.00 hrs</span>
+                                                            </div>
+                                                        </li>
+                                                        <li class="d-flex align-items-center b-l-secondary">
+                                                            <div class="flex-grow-1"> <span>12:00 to 01:45 am</span>
+                                                                <h5>Steaming</h5>
+                                                                <h6>Madeleine Lisa</h6>
+                                                            </div>
+                                                            <div class="flex-shrink-0">
+                                                                <span class="f-w-400 f-13">14.00 hrs</span> 
+                                                            </div>
+                                                        </li>
+
+                                                    </ul>
+                                                </div>
+                                                <div class="tab-pane fade" id="tue" role="tabpanel"
+                                                    aria-labelledby="tue-tab">
+                                                    <ul class="activity-update">
+                                                        <li class="d-flex align-items-center b-l-info">
+                                                            <div class="flex-grow-1"> <span>12:00 to 02:20 am</span>
+                                                                <h5>What`s the project report update?</h5>
+                                                                <h6>Loie Fenter</h6>
+                                                            </div>
+                                                            <div class="flex-shrink-0"> <img class="img-40 b-r-10"
+                                                                    src="../assets/images/avatar/2.jpg" alt=""></div>
+                                                        </li>
+                                                        <li class="d-flex align-items-center b-l-success">
+                                                            <div class="flex-grow-1"> <span>04:00 to 08:20 am</span>
+                                                                <h5>James created changelog page</h5>
+                                                                <h6>Anna Catmire</h6>
+                                                            </div>
+                                                            <div class="flex-shrink-0"> <img class="img-40 b-r-10"
+                                                                    src="../assets/images/avatar/4.jpg" alt=""></div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="tab-pane fade" id="wed" role="tabpanel"
+                                                    aria-labelledby="wed-tab">
+                                                    <ul class="activity-update">
+                                                        <li class="d-flex align-items-center b-l-danger">
+                                                            <div class="flex-grow-1"> <span>09:00 to 02:20 am</span>
+                                                                <h5>Dima phizeg edited ACME 2.4</h5>
+                                                                <h6>Susan Connor</h6>
+                                                            </div>
+                                                            <div class="flex-shrink-0"> <img class="img-40 b-r-10"
+                                                                    src="../assets/images/avatar/5.jpg" alt=""></div>
+                                                        </li>
+                                                        <li class="d-flex align-items-center b-l-dark">
+                                                            <div class="flex-grow-1"> <span>10:00 to 01:45 am</span>
+                                                                <h5>Complete the medical ui system idea.</h5>
+                                                                <h6>Jeff Johnson</h6>
+                                                            </div>
+                                                            <div class="flex-shrink-0"> <img class="img-40 b-r-10"
+                                                                    src="../assets/images/avatar/6.jpg" alt=""></div>
+                                                        </li>
+                                                        <li class="d-flex align-items-center b-l-warning">
+                                                            <div class="flex-grow-1"> <span>04:00 to 10:30 am</span>
+                                                                <h5>Make a new landing page.</h5>
+                                                                <h6>Roger Lum</h6>
+                                                            </div>
+                                                            <div class="flex-shrink-0"> <img class="img-40 b-r-10"
+                                                                    src="../assets/images/avatar/9.jpg" alt=""></div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="tab-pane fade" id="thu" role="tabpanel"
+                                                    aria-labelledby="thu-tab">
+                                                    <ul class="activity-update">
+                                                        <li class="d-flex align-items-center b-l-primary">
+                                                            <div class="flex-grow-1"> <span>10:00 to 10:20 am</span>
+                                                                <h5>Mobile Application Release</h5>
+                                                                <h6>Hannah</h6>
+                                                            </div>
+                                                            <div class="flex-shrink-0"> <img class="img-40 b-r-10"
+                                                                    src="../assets/images/avatar/11.jpg" alt=""></div>
+                                                        </li>
+                                                        <li class="d-flex align-items-center b-l-secondary">
+                                                            <div class="flex-grow-1"> <span>12:00 to 01:45 am</span>
+                                                                <h5>General Meeting</h5>
+                                                                <h6>Madeleine Lisa</h6>
+                                                            </div>
+                                                            <div class="flex-shrink-0"> <img class="img-40 b-r-10"
+                                                                    src="../assets/images/avatar/1.jpg" alt=""></div>
+                                                        </li>
+                                                        <li class="d-flex align-items-center b-l-tertiary">
+                                                            <div class="flex-grow-1"> <span>06:00 to 11:30 am</span>
+                                                                <h5>Client Visit</h5>
+                                                                <h6>Hemmings Edmunds</h6>
+                                                            </div>
+                                                            <div class="flex-shrink-0"> <img class="img-40 b-r-10"
+                                                                    src="../assets/images/avatar/3.jpg" alt=""></div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="tab-pane fade" id="frd" role="tabpanel"
+                                                    aria-labelledby="frd-tab">
+                                                    <ul class="activity-update">
+                                                        <li class="d-flex align-items-center b-l-info">
+                                                            <div class="flex-grow-1"> <span>12:00 to 02:20 am</span>
+                                                                <h5>What`s the project report update?</h5>
+                                                                <h6>Loie Fenter</h6>
+                                                            </div>
+                                                            <div class="flex-shrink-0"> <img class="img-40 b-r-10"
+                                                                    src="../assets/images/avatar/2.jpg" alt=""></div>
+                                                        </li>
+                                                        <li class="d-flex align-items-center b-l-success">
+                                                            <div class="flex-grow-1"> <span>04:00 to 08:20 am</span>
+                                                                <h5>James created changelog page</h5>
+                                                                <h6>Anna Catmire</h6>
+                                                            </div>
+                                                            <div class="flex-shrink-0"> <img class="img-40 b-r-10"
+                                                                    src="../assets/images/avatar/4.jpg" alt=""></div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="tab-pane fade" id="sat" role="tabpanel"
+                                                    aria-labelledby="sat-tab">
+                                                    <ul class="activity-update">
+                                                        <li class="d-flex align-items-center b-l-danger">
+                                                            <div class="flex-grow-1"> <span>09:00 to 02:20 am</span>
+                                                                <h5>Dima phizeg edited ACME 2.4</h5>
+                                                                <h6>Susan Connor</h6>
+                                                            </div>
+                                                            <div class="flex-shrink-0">
+                                                                <img class="img-40 b-r-10"
+                                                                    src="../assets/images/avatar/5.jpg" alt="">
+                                                            </div>
+                                                        </li>
+
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+
+                        
+                        
+                    </div>
+                </div>
+                <!-- Container-fluid ends-->
+            </div>
+            <footer class="footer">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-6 footer-copyright">
+                            <p class="mb-0">
+                                Copyright 2024 © Edmin Template by pixelstrap.
+                            </p>
+                        </div>
+                        <div class="col-md-6">
+                            <p class="float-end mb-0">
+                                Hand crafted &amp; made with
+                                <svg class="svg-color footer-icon">
+                                    <use href="/assets/svg/iconly-sprite.svg#footer-heart">
+                                    </use>
+                                </svg>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </main>
+    <!-- jquery-->
+    <script src="assets/js/vendors/jquery/dist/jquery.min.js"></script>
+    <!-- bootstrap js-->
+    <script src="assets/js/vendors/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/config.js"></script>
+    <!-- Sidebar js-->
+    <script src="assets/js/sidebar.js"></script>
+    <!-- Apexchart js-->
+    <script src="assets/js/vendors/apexcharts/dist/apexcharts.min.js"></script>
+    <!-- dashboard 3 js-->
+    <script src="assets/js/dashboard/dashboard-3.js"></script>
+    <script src="assets/js/datepicker/custom-datepicker.js"></script>
+    <!-- scrollbar js-->
+    <script src="assets/js/scrollbar/simplebar.js"></script>
+    <script src="assets/js/scrollbar/custom.js"></script>
+    <!-- scrollable-->
+    <!-- customizer-->
+    <script src="assets/js/theme-customizer/customizer.js"></script>
+    <!-- custom script -->
+    <script src="assets/js/script.js"></script>
+</body>
+
+
+</html>
